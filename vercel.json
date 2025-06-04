@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "api/*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+    { "src": "/api/getMemory", "dest": "/api/getMemory.js" },
+    { "src": "/api/updateMemory", "dest": "/api/updateMemory.js" }
+  ]
+}
